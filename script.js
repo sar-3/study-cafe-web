@@ -13,3 +13,12 @@ navigation.addEventListener("click", (event) => {
     navigation.classList.remove("is-open");
   }
 });
+
+const reservationForm = document.querySelector("#reservation-form");
+const reservationNotice = document.querySelector("#reservation-notice");
+
+reservationForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  reservationNotice.hidden = false;
+  reservationForm.reset();
+});
