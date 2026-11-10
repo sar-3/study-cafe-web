@@ -79,56 +79,63 @@
       </section>
 
       <section class="reservation" id="rezervacie" aria-labelledby="reservation-title">
-        <div class="reservation__intro">
-          <p class="home__eyebrow">STUDY CAFÉ</p>
-          <h2 id="reservation-title">Rezervácia stola</h2>
-          <p>Vyplň údaje a vyber si miesto na učenie alebo spoločnú prácu.</p>
-        </div>
-
-        <form class="reservation-form" id="reservation-form">
-          <p class="reservation-form__hint">Všetky polia sú povinné.</p>
-
-          <div class="reservation-form__grid">
-            <div class="reservation-form__field">
-              <label for="reservation-date">Dátum rezervácie</label>
-              <input id="reservation-date" name="date" type="date" required>
+        <div class="reservation__layout">
+          <div class="reservation__intro">
+            <p class="home__eyebrow">STUDY CAFÉ</p>
+            <h2 id="reservation-title">Rezervácia stola</h2>
+            <p>Vyplň údaje a vyber si miesto na učenie alebo spoločnú prácu.</p>
+            <p class="reservation__tagline">Rezervuj si svoje miesto na učenie a oddych</p>
+            <div class="reservation__decoration" aria-hidden="true">
+              <span></span><span></span><span></span>
             </div>
-
-            <div class="reservation-form__field">
-              <label for="reservation-time">Čas rezervácie</label>
-              <input id="reservation-time" name="time" type="time" required>
-            </div>
-
-            <div class="reservation-form__field">
-              <label for="reservation-guests">Počet osôb</label>
-              <input id="reservation-guests" name="guests" type="number" min="1" step="1" required>
-            </div>
-
-            <div class="reservation-form__field">
-              <label for="reservation-table">Typ stola</label>
-              <select id="reservation-table" name="table" required>
-                <option value="" selected disabled>Vyber typ stola</option>
-                <option value="classic">Klasický stôl</option>
-                <option value="study-zone">Študijná zóna</option>
-              </select>
-            </div>
-
-            <div class="reservation-form__field">
-              <label for="reservation-name">Meno a priezvisko</label>
-              <input id="reservation-name" name="name" type="text" autocomplete="name" required>
-            </div>
-
-            <div class="reservation-form__field">
-              <label for="reservation-email">E-mail</label>
-              <input id="reservation-email" name="email" type="email" autocomplete="email" required>
-            </div>
+            <p class="reservation__demo">Ukážkový formulár – skutočné rezervácie sa nevytvárajú.</p>
           </div>
 
-          <button class="reservation-form__submit" type="submit">ODOSLAŤ REZERVÁCIU</button>
-          <p class="reservation-form__notice" id="reservation-notice" role="status" aria-live="polite" hidden>
-            Ide o ukážkový formulár. Rezervácia nebola skutočne vytvorená.
-          </p>
-        </form>
+          <form class="reservation-form" id="reservation-form">
+            <p class="reservation-form__hint">Všetky polia sú povinné.</p>
+
+            <div class="reservation-form__grid">
+              <div class="reservation-form__field">
+                <label for="reservation-date">Dátum rezervácie</label>
+                <input id="reservation-date" name="date" type="date" required>
+              </div>
+
+              <div class="reservation-form__field">
+                <label for="reservation-time">Čas rezervácie</label>
+                <input id="reservation-time" name="time" type="time" required>
+              </div>
+
+              <div class="reservation-form__field">
+                <label for="reservation-guests">Počet osôb</label>
+                <input id="reservation-guests" name="guests" type="number" min="1" step="1" required>
+              </div>
+
+              <div class="reservation-form__field">
+                <label for="reservation-table">Typ stola</label>
+                <select id="reservation-table" name="table" required>
+                  <option value="" selected disabled>Vyber typ stola</option>
+                  <option value="classic">Klasický stôl</option>
+                  <option value="study-zone">Študijná zóna</option>
+                </select>
+              </div>
+
+              <div class="reservation-form__field">
+                <label for="reservation-name">Meno a priezvisko</label>
+                <input id="reservation-name" name="name" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="reservation-form__field">
+                <label for="reservation-email">E-mail</label>
+                <input id="reservation-email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <button class="reservation-form__submit" type="submit">ODOSLAŤ REZERVÁCIU</button>
+            <p class="reservation-form__notice" id="reservation-notice" role="status" aria-live="polite" hidden>
+              Ide o ukážkový formulár. Rezervácia nebola skutočne vytvorená.
+            </p>
+          </form>
+        </div>
       </section>
 
       <section class="menu" id="ponuka" aria-labelledby="menu-title">
