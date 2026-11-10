@@ -694,6 +694,33 @@ body {
   font-size: 14px;
 }
 
+.about-contact__hours {
+  margin: 0;
+}
+
+.about-contact__hours > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #e8dfd3;
+}
+
+.about-contact__hours dt {
+  font-weight: 700;
+}
+
+.about-contact__hours dd {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.about-contact__note {
+  margin: 12px 0 0;
+  color: #65717a;
+  font-size: 12px;
+}
+
 .about-contact__features {
   display: grid;
   gap: 14px;
