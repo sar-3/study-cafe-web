@@ -407,6 +407,35 @@ body {
   font-size: 26px;
 }
 
+.menu-category__photo {
+  margin: 0 0 18px;
+}
+
+.menu-category__photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgb(38 53 69 / 14%);
+  object-fit: cover;
+}
+
+.menu-category__photo figcaption {
+  margin-top: 7px;
+  color: #65717a;
+  font-size: 12px;
+}
+
+.menu-category__photo figcaption a {
+  color: var(--blue-dark);
+  text-underline-offset: 2px;
+}
+
+.menu-category__photo figcaption a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
 .menu-category__items {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
