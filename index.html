@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2e8d8">
+    <title>STUDY CAFÉ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="domov">
+      <a class="brand" href="#domov" aria-label="STUDY CAFÉ, domov">
+        STUDY <span>CAFÉ</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="menu-toggle__icon" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Hlavná navigácia">
+        <a href="#domov" aria-current="page">DOMOV</a>
+        <a href="#rezervacie">REZERVÁCIE</a>
+        <a href="#ponuka">PONUKA</a>
+        <a href="#o-kaviarni">O KAVIARNI A KONTAKT</a>
+      </nav>
+    </header>
+
+    <main id="main-content"></main>
+  </body>
+</html>
