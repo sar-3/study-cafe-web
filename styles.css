@@ -125,6 +125,13 @@ body {
   padding: clamp(52px, 9vw, 112px) 0 72px;
 }
 
+.home__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 48px;
+}
+
 .home__intro {
   max-width: 760px;
 }
@@ -214,6 +221,36 @@ body {
 .home__hours p:last-child {
   margin: 0;
   line-height: 1.5;
+}
+
+.home__photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.home__photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 12px;
+  box-shadow: 0 14px 32px rgb(38 53 69 / 16%);
+  object-fit: cover;
+}
+
+.home__photo figcaption {
+  margin-top: 9px;
+  color: #65717a;
+  font-size: 12px;
+}
+
+.home__photo figcaption a {
+  color: var(--blue-dark);
+  text-underline-offset: 2px;
+}
+
+.home__photo figcaption a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
 }
 
 .reservation {
@@ -498,6 +535,17 @@ body {
 
   .menu-item {
     min-height: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .home__hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .home__photo {
+    max-width: 720px;
   }
 }
 
