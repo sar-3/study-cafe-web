@@ -119,6 +119,103 @@ body {
   top: 5px;
 }
 
+.home {
+  width: min(100% - 40px, 1180px);
+  margin: 0 auto;
+  padding: clamp(52px, 9vw, 112px) 0 72px;
+}
+
+.home__intro {
+  max-width: 760px;
+}
+
+.home__eyebrow,
+.home__detail-label {
+  margin: 0 0 14px;
+  color: var(--blue-dark);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.home__eyebrow {
+  display: inline-block;
+  padding: 8px 11px;
+  background: var(--nav);
+}
+
+.home h1 {
+  max-width: 700px;
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.08;
+}
+
+.home__description {
+  max-width: 600px;
+  margin: 22px 0 28px;
+  color: #485968;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.home__reservation {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border-radius: 4px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background-color 140ms ease;
+}
+
+.home__reservation:hover {
+  background: var(--blue-dark);
+}
+
+.home__reservation:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+
+.home__details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.8fr);
+  gap: 48px;
+  margin-top: clamp(52px, 8vw, 88px);
+  padding: 28px 0;
+  border-top: 1px solid #e6ddd0;
+  border-bottom: 1px solid #e6ddd0;
+}
+
+.home__detail-label {
+  margin-bottom: 12px;
+}
+
+.home__features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home__features li {
+  padding-left: 14px;
+  border-left: 3px solid var(--blue);
+  line-height: 1.5;
+}
+
+.home__hours p:last-child {
+  margin: 0;
+  line-height: 1.5;
+}
+
 @media (max-width: 760px) {
   .site-header {
     flex-wrap: wrap;
@@ -149,5 +246,22 @@ body {
 
   .primary-navigation a:last-child {
     border-bottom: 0;
+  }
+
+  .home {
+    padding-top: 56px;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .home__details,
+  .home__features {
+    grid-template-columns: 1fr;
+  }
+
+  .home__details {
+    gap: 30px;
   }
 }
